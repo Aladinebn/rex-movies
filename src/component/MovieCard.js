@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function MovieCard(props) {
   return (
     <div>
-      <div className="flex flex-col p-2 h-96  ">
+      <div className="flex flex-col p-2 h-80  ">
         <img
           className="min-w-full"
           src={`../images/${props.posterURL}`}
@@ -23,7 +23,7 @@ export default function MovieCard(props) {
         </div>
       </div>
       <Link to={`/${props.id}`}>
-        <button className="mt-8 ml-6">view trailer</button>
+        <button className="mt-8 ">view trailer</button>
       </Link>
     </div>
   );
